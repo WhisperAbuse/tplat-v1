@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #eef0f1;
+  --color-text: #08090a;
+  --color-blue: #3b49df;
+  --color-red: #df3b3b;
+  --color-green: #3bdf72;
+  --color-gray: #b5bdc4;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', 'Roboto', sans-serif;
+  /* background-color: var(--color-bg); */
+  color: var(--color-text);
+}
+
+.hidden {
+  display: none;
+}
+
+.post {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-semibold text-gray-900;
+  }
+
+  p {
+    @apply text-base text-gray-900 my-1;
+  }
+
+  img {
+    @apply my-4 w-full max-h-96 object-cover;
+  }
+}
